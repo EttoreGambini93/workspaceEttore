@@ -1,0 +1,39 @@
+package variaveis;
+
+public class TiposDados {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * Tipos de Dados
+		 * Alfanumérico(String): Não ser usado em expressão matemática nem como dado sensível
+		 * Numérico(int e double): dado que pode ser usado em expressão numérica e sensível
+		 */
+		
+		/*
+		 * Regra das Variáveis
+		 * 1ª - Não pode começar com número
+		 * 2ª - Não usar palavras reservadas(palavras da linguagem de programação)
+		 * 3ª - Não usar caracteres especiais.
+		 * 
+		 * Padrôes
+		 * - nomes significativos
+		 * - começar com minúscula
+		 * - padrão CamelCase
+		 * - 
+		 */
+		
+		String nome = "Ettore Gambini";
+		int idade = 27;
+		double altura = 1.71;
+		
+		System.out.print(nome);
+		System.out.print(idade);
+		System.out.print(altura);
+		
+		
+		
+
+	}
+
+}

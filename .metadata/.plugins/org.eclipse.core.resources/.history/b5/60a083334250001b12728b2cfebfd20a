@@ -1,0 +1,69 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class ExercicioWhile2 {
+
+	public static void main(String[] args) {
+
+		String nome;
+		String nome_exp = null;
+		String nome_jovem = null;
+		int idade = 0;
+		int idade_exp = 0;
+		int idade_jovem = 100;
+		int idade_total = 0;
+		int idade_maior = 0;
+		int qtd_pessoas = 0;
+		int media_idade =0;
+
+		do {
+			nome = JOptionPane.showInputDialog("Nome: ");
+			idade = Integer.parseInt(JOptionPane.showInputDialog("Idade: "));
+			idade_total=idade_total+idade;
+			qtd_pessoas++;
+			if(idade>=18) {
+				idade_maior++;
+				idade_exp=idade;
+				nome_exp=nome;
+				idade_jovem=idade;
+				nome_jovem=nome;
+			}else {
+				idade_exp=idade;
+				nome_exp=nome;
+				idade_jovem=idade;
+				nome_jovem=nome;
+			}
+		}while(idade==0 && JOptionPane.showConfirmDialog(null, "Continuar?", "Pergunta", JOptionPane.YES_NO_OPTION)==0);
+
+		do {
+			nome = JOptionPane.showInputDialog("Nome: ");
+			idade = Integer.parseInt(JOptionPane.showInputDialog("Idade: "));
+			idade_total=idade_total+idade;
+			qtd_pessoas++;
+			if(idade>=18) {
+				idade_maior++;
+				if (idade>idade_exp ) {
+					idade_exp=idade;
+					nome_exp=nome;
+				}else if(idade<idade_jovem) {
+					idade_jovem=idade;
+					nome_jovem=nome;
+				}
+			}else if (idade>idade_exp) {
+				idade_exp=idade;
+				nome_exp=nome;
+			}else if(idade<idade_jovem) {
+				idade_jovem=idade;
+				nome_jovem=nome;
+			}
+		}while(JOptionPane.showConfirmDialog(null, "Continuar?", "Pergunta", JOptionPane.YES_NO_OPTION)==0);
+		media_idade = idade_total/qtd_pessoas;
+		JOptionPane.showMessageDialog(null, "Maiores de Idade: " + idade_maior);
+		JOptionPane.showMessageDialog(null, "Média das Idades: " + media_idade);
+		JOptionPane.showMessageDialog(null, "Mais Experiente: " + nome_exp + idade_exp);
+		JOptionPane.showMessageDialog(null, "Mais Jovem: " + nome_jovem + idade_jovem);
+
+	}
+
+}

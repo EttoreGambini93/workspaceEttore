@@ -1,0 +1,17 @@
+package variaveis;
+
+public class TipoString {
+
+	public static void main(String[] args) {
+		//String é um tipo de referência.
+		// Date é um tipo de referência.
+		
+		String email = "etTore.Gambini@itau-UnibanCo.com.Br";
+		System.out.println("Original: " + email);
+		System.out.println("Original: " + email.toUpperCase());
+		System.out.println("Original: " + email.toLowerCase());
+		
+
+	}
+
+}

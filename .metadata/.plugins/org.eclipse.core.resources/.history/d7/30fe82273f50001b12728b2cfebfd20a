@@ -1,0 +1,23 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class ExercicioWhile2 {
+
+	public static void main(String[] args) {
+		
+		String nome;
+		String nome_exp;
+		String nome_jovem;
+		int idade = 0;
+		int idade_exp = 0;
+		int idade_jovem = 0;
+		
+		do {
+			nome = JOptionPane.showInputDialog("Nome: ");
+			idade = Integer.parseInt(JOptionPane.showInputDialog("Idade: "));
+		}while(JOptionPane.showConfirmDialog(null, "Continuar?", "Pergunta", JOptionPane.YES_NO_OPTION)==0);
+
+	}
+
+}

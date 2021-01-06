@@ -1,0 +1,43 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class TiposDados {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * Tipos de Dados
+		 * Alfanumérico(String): Não ser usado em expressão matemática nem como dado sensível
+		 * Numérico(int e double): dado que pode ser usado em expressão numérica e sensível
+		 */
+		
+		/*
+		 * Regra das Variáveis
+		 * 1ª - Não pode começar com número
+		 * 2ª - Não usar palavras reservadas(palavras da linguagem de programação)
+		 * 3ª - Não usar caracteres especiais.
+		 * 
+		 * Padrôes
+		 * - nomes significativos
+		 * - começar com minúscula
+		 * - padrão CamelCase
+		 * - 
+		 */
+		
+		String nome = JOptionPane.showInputDialog("Digite o seu nome");
+		int idade = Integer.parseInt(JOptionPane.showInputDialog("Digite a sua idade"));
+		double altura = Double.parseDouble(JOptionPane.showInputDialog("Digite a sua altura"));
+		double peso = Double.parseDouble(JOptionPane.showInputDialog("Digite o seu peso: "));
+		double imc = peso / (altura * altura);
+		
+		System.out.println("Nome..: " + nome);
+		System.out.println("Idade.: " + idade);
+		System.out.println("Altura: " + altura);
+		System.out.println("Peso: " + peso);
+		System.out.println("IMC: " + imc);
+		
+
+	}
+
+}

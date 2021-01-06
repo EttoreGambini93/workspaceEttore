@@ -1,0 +1,33 @@
+package Exercicios;
+
+import javax.swing.JOptionPane;
+
+public class Exerc3 {
+
+	public static void main(String[] args) {
+
+		double nota1 = Double.parseDouble(JOptionPane.showInputDialog("Nota Trabalho: "));
+		double nota2 = Double.parseDouble(JOptionPane.showInputDialog("Nota Semestral: "));
+		double nota3 = Double.parseDouble(JOptionPane.showInputDialog("Nota Exame Final: "));
+		double mp = 0;
+		char conceito;
+
+		mp = (float) ((nota1*2 + nota2*3 + nota3*5) / 10);
+
+		if (mp>=8 && mp<=10) {
+			conceito = 'A';
+		}else if(mp>=7 && mp<=7.9) {
+			conceito = 'B';
+		}else if(mp>=6 && mp<=6.9) {
+			conceito = 'C';
+		}else if(mp>=5 && mp<=5.9) {
+			conceito = 'D';
+		}else {
+			conceito = 'E';
+		}
+		
+		System.out.println("Média: " + mp);
+		System.out.println("Nota Conceito: " + conceito);
+	}
+
+}

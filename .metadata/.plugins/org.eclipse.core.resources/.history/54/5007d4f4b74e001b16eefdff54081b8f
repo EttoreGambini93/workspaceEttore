@@ -1,0 +1,20 @@
+package variaveis;
+
+public class Carrinho {
+
+	public static void main(String[] args) {
+		String nome_produto = "Carrinho";
+		String categoria = "Brinquedo";
+		double valor_prod = 9.5;
+		double qtd_prod = 1;
+		double imp_prod = 2;
+		
+		System.out.println(nome_produto);
+		System.out.println(categoria);
+		System.out.println(valor_prod);
+		System.out.println(qtd_prod);
+		System.out.println(imp_prod);
+
+	}
+
+}

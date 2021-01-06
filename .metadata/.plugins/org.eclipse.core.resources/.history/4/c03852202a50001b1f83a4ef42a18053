@@ -1,0 +1,30 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioDo {
+
+	public static void main(String[] args) {
+		
+	int num1 = 0;
+	int num2 = 0;
+	num1 = Integer.parseInt(JOptionPane.showInputDialog("Número à ser adivinhado: "));
+	do {
+		
+		num2 = Integer.parseInt(JOptionPane.showInputDialog("Adivinhe o número: "));
+	}while(num2!=num1); {
+		JOptionPane.showMessageDialog(null, "Parabéns! Você acertou.");
+	}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

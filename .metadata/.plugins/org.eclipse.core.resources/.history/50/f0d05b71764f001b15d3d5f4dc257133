@@ -1,0 +1,36 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioDecisaoComposta {
+
+	public static void main(String[] args) {
+		
+		String produto = JOptionPane.showInputDialog("Nome do Produto: ");
+		short qtd = Short.parseShort(JOptionPane.showInputDialog("Quantidade: "));
+		double valor = Double.parseDouble(JOptionPane.showInputDialog("Valor: "));
+		
+		if (qtd>=20) {
+			valor = valor*0.88;
+		}
+		else if (qtd>=10 && qtd>=20) {
+			valor = valor*0.9;
+		}else if (qtd>=5 && qtd<=9) {
+			valor = valor*0.95;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

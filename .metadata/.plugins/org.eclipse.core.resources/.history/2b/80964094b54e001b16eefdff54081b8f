@@ -1,0 +1,25 @@
+package variaveis;
+
+public class TiposDados {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * Tipos de Dados
+		 * Alfanumérico(String): Não ser usado em expressão matemática nem como dado sensível
+		 * Numérico(int e double): dado que pode ser usado em expressão numérica e sensível
+		 */
+		
+		String nome = "Ettore Gambini";
+		int idade = 27;
+		double altura = 1.71;
+		
+	
+		
+		
+		
+		
+
+	}
+
+}
